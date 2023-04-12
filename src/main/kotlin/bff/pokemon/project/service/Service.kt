@@ -1,10 +1,11 @@
 package bff.pokemon.project.service
 
+import bff.pokemon.project.client.Client
 import org.springframework.stereotype.Service
 
 @Service
-class WSService {
+class Service(private val client: Client) {
     fun index(): String {
-        return client
+        return client.index()
     }
 }

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping
-class WSController (private val service: WSService) {
+class Controller (private val service: Service) {
     @GetMapping
     fun index() : String {
         return service.index()
